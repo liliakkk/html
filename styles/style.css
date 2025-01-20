@@ -1,0 +1,298 @@
+/* General Styles */
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    line-height: auto;
+    color: #333; /* Default text color */
+    background-color: #f9f9f9; /* Light background */
+}
+/* Container */
+.container {
+  width: 90%; /* Use a percentage of viewport width for responsiveness */
+  max-width: 1280px; /* Maximum width for large screens */
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+a {
+    text-decoration: none; /* Removes the default underline */
+     color: inherit;
+  }
+/* Header Styles */
+header {
+    background-color: #fff;
+    padding: 60px 0;
+    border-bottom: 1px solid #eee;
+    position: sticky; /* Sticks to the top of the viewport */
+    top: 0;
+    z-index: 100;
+    
+}
+ header .logo {
+    font-weight: bold;
+    font-size: 20px;
+ }
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+  }
+
+header nav ul li:hover{
+    opacity: 0.7;
+}
+header button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+/* Banner Section */
+#banner-wrapped {
+    display: flex;
+    padding: 60px 0;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner {
+    
+    
+    display: flex;
+    flex-direction: column;
+    padding: 60px;
+    align-items: center;
+
+}
+
+.banner img {
+    width: 100%;
+    max-width: 1280px;
+    
+    align-items: center;
+    border-radius: 20px;
+    
+  }
+.intro {
+    
+  font-family: "Rampart One", serif;
+  font-weight: 400;
+  font-style: normal;
+  display: flex;
+  align-items:center;
+  flex-direction: column;
+  padding: 60px;
+  font-size: 28px;
+  
+}
+  
+.intro p {
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 20px;
+    display: flex;
+    text-align: justify;
+  }
+.intro button{
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: fit-content;
+}
+/* My Works Section */
+.works {
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+.works .works-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.works h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.work-card {
+    background: #f0f0f0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+     width: 30%;
+     min-width: 250px;
+}
+.work-card img{
+    display: block;
+    background: #eee;
+    height: 150px;
+    width: 100%;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+ .work-card p {
+     font-size: 0.9rem;
+    color: #555;
+  }
+/* Work Process Section */
+.process {
+    padding: 60px 0;
+    background-color: #f0f0f0;
+}
+
+.process h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.process .process-step {
+    padding: 15px 0;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+     display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.process .process-step .step-header{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+    }
+.process .process-step h3{
+    font-size: 1.3rem;
+}
+.process .process-step span{
+    background-color: #ddd;
+    padding: 5px 10px;
+    border-radius: 50%;
+}
+
+.process .process-step p{
+    color: #555;
+}
+
+/* Contact Section */
+.contact {
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+.contact .container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 1rem;
+    color: #555;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+.contact form {
+    width: fit-content;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+.contact form .input-group{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.contact form input[type="text"],
+.contact form input[type="email"],
+.contact form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    
+}
+
+.contact form textarea {
+    height: 150px;
+    resize: vertical;
+  }
+
+.contact form button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: fit-content;
+    align-self: center;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #f0f0f0;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px solid #eee;
+    font-size: 20px;
+}
+
+footer p {
+    font-weight: bold;
+}
+footer .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .social-links a {
+    margin-left: 15px;
+    text-decoration: underline;
+}
+
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    header nav {
+      display: none;
+    }
+
+    #banner-wrapped {
+        flex-direction: column;
+    }
+    .banner{
+        width: 100%;
+        height: auto;
+    }
+    .intro {
+        width: 100%;
+    }
+}
